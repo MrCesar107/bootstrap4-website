@@ -6,9 +6,116 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="author" content="César Rodríguez">
     <meta name="description" content="Sitio web creado con bootstrap 4">
-    <title>Bootstrap 4</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Bootstrap 4 Website</title>
   </head>
   <body>
-
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navegacion">
+      <div class="container">
+        <a class="navbar-brand" href="#">Bootstrap Website</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#header">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#info1">Acerca de</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacto">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header id="header">
+      <div class="container mt-5">
+        <div class="row">
+          <div class="col-12 col-sm-6">
+            <div class="header-content-left">
+              <img src="img/image1.png" style="width: 100%;" alt="Smartphone">
+            </div>
+          </div>
+          <div class="col-12 col-sm-6">
+            <div class="header-content-right">
+              <h1 class="display-4">Lorem ipsum</h1>
+              <p class="mt-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a href="#" class="btn btn-outline-secondary btn-lg mt-2">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section id="testimonio">
+      <div class="container">
+        <p class="h2 mb-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p class="h4">- Steve Jobs</p>
+      </div>
+    </section>
+    <section id="info1">
+      <div class="container">
+        <div class="row mt-5">
+          <div class="col-12 col-sm-6">
+            <div class="info-left">
+              <img src="img/image2.png" alt="Imagen2" style="width: 100%;">
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 my-auto">
+            <div class="info-right">
+              <h2>Lorem ipsum dolor sit.</h2>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+              <a href="#" class="btn btn-outline-secondary btn-lg">Ver más</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="info2">
+      <div class="container">
+        <div class="row my-5">
+          <div class="col-12 col-sm-6">
+            <h2>Lorem ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="col-12 col-sm-6">
+            <h2>Lorem ipsum dolor.</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer id="contacto">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-5">
+            <form class="card my-4">
+              <div class="card-body">
+                <div class="form-group">
+                  <input type="text" placeholder="Nombre" required class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="email" placeholder="Email" required class="form-control">
+                </div>
+                <div class="form-group">
+                  <input type="text" placeholder="Teléfono" required class="form-control">
+                </div>
+                <div class="form-group">
+                  <textarea rows="10" cols="30" placeholder="Mensaje" required class="form-control"></textarea>
+                </div>
+                <button type="submit" class="btn btn-outline-secondary btn-block">Enviar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
